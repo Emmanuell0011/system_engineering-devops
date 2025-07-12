@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
+# This script lists files in the current directory and shows the part after the first dash using a for loop
 for file in *; do [ -f "$file" ] && echo "${file#*-}"; done
