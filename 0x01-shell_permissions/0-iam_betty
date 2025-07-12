@@ -1,19 +1,2 @@
+#!/bin/bash
 su betty
-tail -1 0-iam_betty | wc -c
-9
-# Navigate to the root of your repo
-cd system_engineering-devops
-
-# Ensure you're in the correct directory
-cd 0x01-shell_permissions
-
-# Create the file
-echo "su betty" > 0-iam_betty
-
-# Confirm it's exactly 8 characters
-tail -1 0-iam_betty | wc -c  # should return 9 (8 + newline)
-
-# Add, commit and push
-git add 0-iam_betty
-git commit -m "Add script to switch to user betty"
-git push origin main
