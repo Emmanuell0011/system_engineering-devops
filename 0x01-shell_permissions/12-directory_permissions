@@ -1,2 +1,2 @@
-#!/bin/bash   mkdir my_dir  chmod 751 my_dir
+#!/bin/bash 
 drwxr-x--x 2 julien julien 4096 ... my_dir
