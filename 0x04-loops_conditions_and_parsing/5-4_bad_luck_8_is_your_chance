@@ -1,2 +1,14 @@
 #!/usr/bin/env bash
-# This script loops from 1 to 10 and prints "bad luck" on the 4th iteration, "good luck" on the 8th, and "Best School" for all others; i=1; while [ "$i" -le 10 ]; do if [ "$i" -eq 4 ]; then echo "bad luck"; elif [ "$i" -eq 8 ]; then echo "good luck"; else echo "Best School"; fi; i=$((i + 1)); done
+# This script prints messages from 1 to 10 using a while loop with if, elif, and else logic
+
+i=1
+while [ $i -le 10 ]; do
+  if [ "$i" -eq 4 ]; then
+    echo "bad luck"
+  elif [ "$i" -eq 8 ]; then
+    echo "good luck"
+  else
+    echo "Best School"
+  fi
+  i=$((i + 1))
+done
