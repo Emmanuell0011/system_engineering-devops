@@ -1,5 +1,2 @@
-#!/usr/bin/env bash
-# This script lists local variables, environment variables, and shell functions
-
-(set -o posix; set)  # Lists local and environment variables
-declare -f           # Lists all defined shell functions
+#!/bin/bash
+(set -o posix; set; declare -f)
