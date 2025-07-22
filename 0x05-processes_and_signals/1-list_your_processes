@@ -1,2 +1,6 @@
 #!/bin/bash
 ps -eo user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,cmd --forest
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0  22560  3448 ?        Ss   09:34   0:01 /sbin/init
+root       210  0.0  0.0  45436  2940 ?        Ss   09:34   0:00  \_ /lib/systemd/systemd-journald
+...
